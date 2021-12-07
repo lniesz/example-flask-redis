@@ -24,7 +24,8 @@ metadata:
   name: frontend-ing
 spec:
   rules:
-  - http:
+  - host: shoppinglist.dev.rke-multi.localdomain
+    http:
       paths:
       - backend:
           service:
@@ -32,6 +33,6 @@ spec:
             port:
               number: 80
         path: /
-        pathType: Exact
+        pathType: ImplementationSpecific
 status:
   loadBalancer: {}

@@ -18,7 +18,7 @@ spec:
         app: frontend
     spec:
       containers:
-      - image: timirnich/shoppinglist:latest
+      - image: lniesz/exampleflaskredis:latest
         name: shoppinglist
         resources: {}
         ports:
