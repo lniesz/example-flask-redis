@@ -17,16 +17,16 @@ def index():
 @app.route('/addvalue', methods=['POST'])
 def add_value():
 	value = request.form['value']
-	app.logger.info("Received entry " + value + ", adding to shopping list... TEST")
-	print("Received entry " + value + ", adding to shopping list... TEST")
+	app.logger.info("Received entry " + value + ", adding to shopping list...")
+	print("Received entry " + value + ", adding to shopping list...")
 	redisdb.rpush("list", value)
 	return redirect("/", code=302)
 
 @app.route('/removevalue', methods=['POST'])
 def remove_value():
 	value = request.form['value']
-	app.logger.info("Received entry " + value + ", removing from shopping list... TEST")
-	print("Received entry " + value + ", removing from shopping list... TEST")
+	app.logger.info("Received entry " + value + ", removing from shopping list...")
+	print("Received entry " + value + ", removing from shopping list...")
 	redisdb.lrem("list", 0, value)
 	return redirect("/", code=302)
 
