@@ -31,7 +31,10 @@ def remove_value():
 	return redirect("/", code=302)
 
 if __name__ == '__main__':
-	handler = RotatingFileHandler('app.log', maxBytes=10000, backupCount=1)
+	formatter = logging.Formatter( "%(asctime)s | %(pathname)s:%(lineno)d | %(funcName)s | %(levelname)s | %(message)s ")
+	handler = RotatingFileHandler('logs/app.log', maxBytes=10000, backupCount=1)
 	handler.setLevel(logging.INFO)
+	handler.setFormatter(formatter)
 	app.logger.addHandler(handler)
+	app.logger.setLevel(logging.INFO)
 	app.run(host="0.0.0.0", port=8000)
