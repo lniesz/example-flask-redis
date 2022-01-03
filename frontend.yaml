@@ -16,7 +16,7 @@ spec:
         app: frontend
     spec:
       containers:
-      - image: https://harbor.rke-multi.localdomain/shoppinglist/exampleflaskredis:latest
+      - image: lniesz/exampleflaskredis:latest
         name: shoppinglist
         resources: {}
         ports:
