@@ -1,0 +1,45 @@
+CONNECTED(00000006)
+---
+Certificate chain
+ 0 s:
+   i:C = HU, ST = Pest, L = Budapest, O = IBM, OU = TSS
+-----BEGIN CERTIFICATE-----
+MIICgjCCAiigAwIBAgIRAKabQeHhAjZmyIKOpPVsPWEwCgYIKoZIzj0EAwIwSzEL
+MAkGA1UEBhMCSFUxDTALBgNVBAgMBFBlc3QxETAPBgNVBAcMCEJ1ZGFwZXN0MQww
+CgYDVQQKDANJQk0xDDAKBgNVBAsMA1RTUzAeFw0yMTEyMDkxMzQwNDRaFw0yMjAz
+MDkxMzQwNDRaMAAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCpv1nl
+DxXuAgCwXQKa/A2eYHBay/ncbGc77Z6JL/T0M91t4Ct0fX2IZWXWu4COXisIqlKG
+htrP9s3KwdUGcJYnCO7yotTxhgrArZvUDyo7mdGGjZzt2i6b2wGAJKBMM72VMPdq
+vx8XIsewFvBkQB+BswL5zQaRjtJDzdUzGUC1hfa9R5ViwOKqckC2ffX8JApO5zGd
+kXm+peLWR/nOd3kVccJOMfdVpcVDo5lFpCRI40psuxuJXeVkFGtlIg4ZhFlztrbg
+wTax17PGv2qm6hzxMOpUOp3ILWzE7VL3Vi1dAi6a4KNVmc9jg4AHzzKIK9I6Excn
+gAkm2ai2fGPSAUNLAgMBAAGjbTBrMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8E
+AjAAMB8GA1UdIwQYMBaAFNAFOo9PRrq9JVrM1dQnA9FnU23UMCoGA1UdEQEB/wQg
+MB6CHGhhcmJvci5ya2UtbXVsdGkubG9jYWxkb21haW4wCgYIKoZIzj0EAwIDSAAw
+RQIhAJle+uww8s2NekeiDcCZiakVIilI4cbkt2PKa4qVMY13AiAbHzUNrVItk69N
+BZEKoln5aiu1iN60aCb0Gcc8Z4cmSQ==
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=
+
+issuer=C = HU, ST = Pest, L = Budapest, O = IBM, OU = TSS
+
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 1206 bytes and written 410 bytes
+Verification error: unable to verify the first certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 21 (unable to verify the first certificate)
+---
